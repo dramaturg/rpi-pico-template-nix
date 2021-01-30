@@ -63,7 +63,6 @@ let
       install -m755 -D bin/bt $out/bin/bt
     '';
   };
-#in pkgsCross.arm-embedded.stdenv.mkDerivation rec {
 in stdenv.mkDerivation rec {
   name = "rpi-pico-template";
 
@@ -79,15 +78,7 @@ in stdenv.mkDerivation rec {
     picotool
   ];
 
-  #buildInputs = [
-  #  newlib
-  #];
-
   PICO_SDK_PATH = "${pico-sdk}/";
-  #CC = "arm-none-eabi-gcc";
-  #AR = "arm-none-eabi-ar";
-  #CXX = "arm-none-eabi-g++";
-  #LD = "arm-none-eabi-ld";
 
   src = ./.;
 
