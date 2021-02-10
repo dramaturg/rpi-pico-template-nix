@@ -24,6 +24,9 @@ flash: build/main.uf2
 	sync
 	sudo umount /mnt
 
+term:
+	sudo bt
+
 waitforterm:
 	sudo bt -n
 
