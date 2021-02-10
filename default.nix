@@ -3,10 +3,9 @@ with import <nixpkgs> {};
 let
   pico-sdk = pkgs.fetchgit {
     url = "https://github.com/raspberrypi/pico-sdk.git";
-    rev = "0f3b7951167cf672afdcb34a58ddd0e363ae886f";
-    sha256 = "11y902j85srqf609l9wk7m5w3vd8avdw59akdzlnqvf7xdj4w8m0";
+    rev = "2d5789eca89658a7f0a01e2d6010c0f254605d72";
+    sha256 = "17cl1kzjiibsl3g27b7mk9g2cy2vwpk56649r8pjgk6bnl3z5h82";
     fetchSubmodules = true;
-    leaveDotGit = true;
   };
   picotool = stdenv.mkDerivation {
     name = "picotool";
