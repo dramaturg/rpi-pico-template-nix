@@ -3,8 +3,8 @@ with import <nixpkgs> {};
 let
   pico-sdk = pkgs.fetchgit {
     url = "https://github.com/raspberrypi/pico-sdk.git";
-    rev = "2d5789eca89658a7f0a01e2d6010c0f254605d72";
-    sha256 = "17cl1kzjiibsl3g27b7mk9g2cy2vwpk56649r8pjgk6bnl3z5h82";
+    rev = "fc10a97c386f65c1a44c68684fe52a56aaf50df0";
+    sha256 = "17c1abv8m94dzi9vipq60znilfcd2shy6v4f9rycgxywcpfgpi9v";
     fetchSubmodules = true;
   };
   picotool = stdenv.mkDerivation {
@@ -15,8 +15,8 @@ let
     src = fetchFromGitHub {
       owner = "raspberrypi";
       repo = "picotool";
-      rev = "c15ac281581318b7e2fb55ff613f71c7bde0a788";
-      sha256 = "1d21s5s8wcsrhnw2psgwnhci96kwf2hk92wwgfrp6ffzgah4lx39";
+      rev = "252041279916a2a56e4e242e58ab58b4a7963ced";
+      sha256 = "1p25hfbpgr2zzp4hpcviz0ayfmh9yaz10vkhhw0ca1xx3ixpgi1n";
     };
 
     nativeBuildInputs = [
